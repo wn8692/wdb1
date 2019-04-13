@@ -1,17 +1,16 @@
-﻿<html>
-<head>
-  <title>HTML</title>
-   <meta charset="urf-8">
-</head>
-<body>
-<h1><a href="index.HTML">HTML</h1>
-<ol>
-  <li><a href="1.HTML">기술소개</li>
-  <li><a href="2.HTML">기본문법</li>
-  <li><a href="3.HTML">하이퍼</li>
-  <li><a href="4.HTML">리스트</li>
-</ol>
-<h2>기술소개</h2>
-ㅋㅋㅋㅋㅋ
-</body>
-</html>
+<script type="text/javascript" src="/js/instafeed.min.js"></script> <!-- js 파일 로드 -->
+<script type="text/javascript">
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: 12400247300,
+    sortBy: "most-recent",
+    limit: 20,
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" />{{caption}}</a>',
+    // {{link}} : 게시물 링크, {{image}} : 사진 url, {{caption}} : 게시물 텍스트
+    accessToken: '12400247300.6b46320.0629b869445d44e8a97f25c025e73a77'
+});
+
+userFeed.run();
+</script>
+
+<div id="instafeed"></div>
